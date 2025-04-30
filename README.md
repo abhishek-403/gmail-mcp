@@ -10,27 +10,27 @@
 
 
 ## Installation
-1. Clone the Repo
- ```bash
- git clone https://github.com/abhishek-403/gmail-mcp.git
- bun install 
+a. Clone the Repo
+```bash
+git clone https://github.com/abhishek-403/gmail-mcp.git
+bun install 
    ```
 
- 2. Create a Google Cloud Project:
-   - Go to [Google Cloud Console](https://console.cloud.google.com/).
-   - Create a new project and enable the Gmail API for your project.
+ b. Create a Google Cloud Project:
+- Go to [Google Cloud Console](https://console.cloud.google.com/).
+- Create a new project and enable the Gmail API for your project.
 
- 3. Create OAuth 2.0 Credentials:
-   - Go to "APIs & Services" -> "Credentials".
-   - Click "Create Credentials" -> "OAuth client ID".
-   - Choose "Web application" as application type.
-   - For Web application, add `http://localhost:3000/oauth2callback` to the authorized redirect URIs.
-   - Download the JSON file of your client's OAuth keys.
-   - Rename the key file to `credentials.json` and paste it in the root of the project.
-   - Go to "OAuth Consent Screen" -> "Audience"
-   - Scroll down, under "Test User" click "Add Users" and enter your email you wish to use for sending emails.
+ c. Create OAuth 2.0 Credentials:
+- Go to "APIs & Services" -> "Credentials".
+- Click "Create Credentials" -> "OAuth client ID".
+- Choose "Web application" as application type.
+- For Web application, add `http://localhost:3000/oauth2callback` to the authorized redirect URIs.
+- Download the JSON file of your client's OAuth keys.
+- Rename the key file to `credentials.json` and paste it in the root of the project.
+- Go to "OAuth Consent Screen" -> "Audience"
+- Scroll down, under "Test User" click "Add Users" and enter your email you wish to use for sending emails.
 
-   4. Download and install [Claude Desktop App](https://claude.ai/download)
+d. Download and install [Claude Desktop App](https://claude.ai/download)
    - Enable developer mode from "Help" -> "Enable Developer Mode'
    - Restart the Claude App.
    - Press ```Ctrl``` ```,``` (comma) and go to "Developer"->"Edit Config".
